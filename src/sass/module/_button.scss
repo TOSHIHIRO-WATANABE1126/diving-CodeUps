@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.button {
+  display: inline-block;
+  width: 202px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $green;
+  font-size: 14px;
+  color: $white;
+  font-family: $second-font-family;
+  line-height: 1.57;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.button::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 4px;
+  left: 4px;
+  border: 1px solid $green;
+  background-color: transparent;
+  width: 202px;
+  height: 56px;
+}
+
+.button__right-arrow {
+  display: inline-block;
+  position: relative;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: $white;
+  margin-left: 8px;
+}
+
+.button__right-arrow::after {
+  position: absolute;
+  content: "";
+  bottom: 3.5px;
+  right: -1px;
+  width: 10px;
+  height: 1px;
+  background-color: $white;
+  transform: rotate(45deg);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color: $green;
+    background-color: $white;
+    border: 1px solid $green;
+  }
+
+  .button:hover span {
+    background-color: $green;
+  }
+
+  .button:hover span::after {
+    background-color: $green;
+  }
+
+  .button:hover::after {
+    transform: scale(1, 1);
+  }
+}
