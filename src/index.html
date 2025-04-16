@@ -27,13 +27,338 @@
     />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header js-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#"
+            ><img src="./assets/images/common/CodeUps.svg" alt="ヘッダーロゴ"
+          /></a>
+        </h1>
+        <nav class="header__nav u-desktop">
+          <ul class="header-nav__items nav-items">
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>Campaign</span><span>キャンペーン</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>About us</span><span>私たちについて</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>Information</span><span>ダイビング情報</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>Blog</span><span>ブログ</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>Voice</span><span>お客様の声</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>Price</span><span>料金一覧</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>FAQ</span><span>よくある質問</span></a
+              >
+            </li>
+            <li class="header-nav__item nav-item">
+              <a href="#" class="nav-item__link"
+                ><span>Contact</span><span>お問合わせ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hamburger js-hamburger u-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="drawer js-drawer">
+        <div class="drawer__inner">
+          <div class="drawer__content">
+            <div class="drawer__first-content">
+              <ul class="drawer__items drawer-items">
+                <li class="drawer__item--mt0 drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >キャンペーン</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >ライセンス取得</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >貸切体験ダイビング</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >ナイトダイビング</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >私たちについて</span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <ul class="drawer__items drawer-items">
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >ダイビング情報</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >ライセンス講習</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >体験ダイビング</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >ファンダイビング</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >ブログ</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="drawer__second-content">
+              <ul class="drawer__items drawer-items">
+                <li class="drawer__item--mt0 drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >お客様の声</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >料金一覧</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >ライセンス講習</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >体験ダイビング</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><span class="drawer-item__link-text"
+                      >ファンダイビング</span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <ul class="drawer__items drawer-items">
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >よくある質問</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >プライバシーポリシー</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >利用規約</span
+                    ></a
+                  >
+                </li>
+                <li class="drawer__item drawer-item">
+                  <a href="#" class="drawer-item__link"
+                    ><img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt="ヒトデのロゴ"
+                      class="drawer-item__link-img"
+                    /><span
+                      class="drawer-item__link-text drawer-item__link-text--bold"
+                      >お問い合わせ</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mv">
+        <div class="mv__inner">
+          <div class="mv__slider swiper js-mv-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv1-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./assets/images/common/mv1-sp.jpg"
+                    alt="透き通った海中で亀一匹が泳いでいる様子"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv2-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./assets/images/common/mv2-sp.jpg"
+                    alt="海中の左側に亀一匹、右側に２名のダイバーが泳いでいる様子"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv3-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./assets/images/common/mv3-sp.jpg"
+                    alt="青空の下、海上に数台の船が浮いている。"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv4-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./assets/images/common/mv4-sp.jpg"
+                    alt="青空の下、海と砂浜のビーチ"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="mv__heading">
+            <h2 class="mv__title">DIVING</h2>
+            <p class="mv__sub-title">into the ocean</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.mv {
+  position: relative;
+}
+
+.mv__inner {
+}
+
+.mv__slider {
+}
+
+.mv__heading {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mv__title {
+  font-size: 40px;
+  font-family: Lato;
+  font-weight: normal;
+  color: $white;
+  letter-spacing: 0.54em;
+  @include mq(md) {
+    font-size: 80px;
+    line-height: 1.25;
+  }
+}
+
+.mv__sub-title {
+  font-size: 20px;
+  font-family: $second-font-family;
+  color: $white;
+}

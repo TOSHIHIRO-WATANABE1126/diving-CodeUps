@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.hamburger {
+  position: fixed;
+  z-index: 9999;
+  top: 28px;
+  right: 15px;
+  width: 32px;
+  height: 24px;
+  // background-color: #fff;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $white;
+  transition: 0.5s transform;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 12px;
+  transition: transform 0.5s;
+}
+
+.hamburger span:nth-child(3) {
+  top: 24px;
+}
+
+.hamburger.is-active {
+}
+
+.hamburger.is-active span {
+}
+
+.hamburger.is-active span:nth-child(1) {
+  top: 12px;
+  transform: rotate(-35deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+  top: 12px;
+  transform: rotate(35deg);
+}

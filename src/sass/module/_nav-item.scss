@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.nav-item {
+}
+
+.nav-item__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item__link span {
+  text-align: center;
+  color: $white;
+}
+
+.nav-item__link span:nth-child(1) {
+  font-size: 18px;
+  font-family: $second-font-family;
+  line-height: 1;
+}
+
+.nav-item__link span:nth-child(2) {
+  margin-top: 4px;
+  font-size: 10px;
+  font-family: $base-font-family;
+  line-height: 1.5;
+}

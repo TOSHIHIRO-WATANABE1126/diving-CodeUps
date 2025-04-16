@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.drawer-item {
+}
+
+.drawer-item__link {
+  display: flex;
+}
+
+.drawer-item__link-img {
+  width: 18px;
+  height: 18px;
+}
+
+.drawer-item__link-text {
+  padding-left: 22px;
+  font-size: 16px;
+  font-family: $base-font-family;
+  color: $white;
+  line-height: 1.12;
+}
+
+.drawer-item__link-text--bold {
+  padding-left: 4px;
+  font-weight: $bold;
+}
