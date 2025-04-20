@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.campaign {
+  overflow: hidden;
+  margin-top: 40px;
+  @include mq(md) {
+    margin-top: 120px;
+  }
+}
+
+.campaign__inner {
+}
+
+.campaign__title {
+}
+
+.campaign__eng-title {
+}
+
+.campaign__ja-title {
+}
+
+.campaign__slider {
+  // margin-right: calc(56% - 50vw);
+  margin-top: 24px;
+  position: relative;
+  @include mq(md) {
+    margin-top: 40px;
+  }
+}
+
+.campaign__swiper {
+  // clip-path: inset(0% -50% -5% 0%);
+  overflow: visible;
+}
+
+.campaign__cards {
+}
+
+.campaign__card {
+}
+
+.campaign__swiper-button-prev {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: -105px;
+    right: 18%;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/common/prev-button.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.campaign__swiper-button-next {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: -105px;
+    right: 3%;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/common/next-button.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.campaign__button {
+  margin-top: 40px;
+  text-align: center;
+}
